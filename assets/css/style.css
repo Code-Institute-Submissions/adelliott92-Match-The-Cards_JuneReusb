@@ -28,7 +28,7 @@ nav{
 }
 
 /* Dark mode feature*/
-.dark-mode{
+.dark-mode, .dark-mode-enabled{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +49,30 @@ nav{
     background:#a842fc;
     border-radius: 50px;
 }
+
+/* Dark mode enabled */
+
+.dark-mode-enabled{
+    width: 190px;
+}
+
+.toggler-on{
+    margin-left: auto;
+}
+
+.dark-background{
+    background: #16161e;
+}
+
+.grey-background{
+    background: #919191;
+}
+
+.white-background{
+    background: #ffffff;
+}
+
+
 
 /* Media queries */
 
