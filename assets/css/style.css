@@ -1,0 +1,130 @@
+/* Google font used is Roboto Condensed with weight of 300 and 400 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* Removed browser formatting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #760acf;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Header section */
+
+header, nav{
+    height: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+/* Dark mode feature*/
+.dark-mode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    width: 160px;
+}
+
+.dark-mode-button{
+    width: 60px;
+    height: 30px;
+    background: #430775;
+    border-radius: 50px;
+}
+
+.toggler{
+    width: 30px;
+    height: 30px;
+    background:#a842fc;
+    border-radius: 50px;
+}
+
+/* Media queries */
+
+/* Header section mequeries for large devices */
+@media only screen and (min-width: 991px) {
+    header{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+
+  @media screen and (max-width: 960px) {
+    header, nav{
+        height: 70px;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+/* Header section media queries for mobile devices */
+@media screen and (max-width: 575px) {
+    header, nav{
+        height: 50px;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h1{
+      font-size: 1em;  
+    }
+
+    .dark-mode{
+        width: 110px;
+        font-size: 0.9em;
+    }
+
+    .dark-mode-button{
+        width: 30px;
+        height: 15px;
+        background: #430775;
+        border-radius: 50px;
+    }
+    
+    .toggler{
+        width: 15px;
+        height: 15px;
+        background:#a842fc;
+        border-radius: 50px;
+    }
+}
+
+@media only screen and (max-width: 241px) {
+    h1{
+        font-size: 0.8em;
+    }
+
+    .dark-mode{
+        width: 90px;
+        font-size: 0.7em;
+    }
+
+    .dark-mode-button{
+        width: 30px;
+        height: 15px;
+        background: #430775;
+        border-radius: 50px;
+    }
+    
+    .toggler{
+        width: 15px;
+        height: 15px;
+        background:#a842fc;
+        border-radius: 50px;
+    }
+}
