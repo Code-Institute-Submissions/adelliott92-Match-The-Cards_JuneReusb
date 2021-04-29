@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Header section -->
     <header>
         <nav>
-            <h1>MATCH THE CARDS!</h1>
+            <div class="mtc-brand">
+                <img src="assets/images/brain-32x32.png" alt="A brain with smiley face">
+                <h1>MATCH THE CARDS!</h1>
+            </div>
             <div class="dark-mode">
                 <p>DARK MODE</p>
                 <div class="dark-mode-button">
@@ -21,6 +25,67 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main section -->
+    <main>
+        <section class="card-board">
+            <div class="card-heading">
+                <img src="assets/images/brain-main-img.png" width="64" height="64" alt="A brain with smiley face & magnifying glass">
+                <h2>FIND THE MATCHES</h2>
+            </div>
+            <div class="card-grid">
+                <div class="card-item" data-framework="ireland">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/ireland.png" width="64" height="64" alt="flag of ireland">
+                </div>
+                <div class="card-item"  data-framework="ireland">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/ireland.png" width="64" alt="flag of england">
+                </div>
+                <div class="card-item" data-framework="france">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/france.png" width="64" alt="flag of france">
+                </div>
+                <div class="card-item" data-framework="france">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/france.png" width="64" height="64" alt="flag of france">
+                </div>
+                <div class="card-item" data-framework="scotland">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/scotland.png" width="64" height="64" alt="flag of scotland">
+                </div>
+                <div class="card-item" data-framework="scotland">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/scotland.png" width="64" height="64" alt="flag of scotland">
+                </div>
+                <div class="card-item" data-framework="new zealand">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/new-zealand.png" width="64" height="64" alt="flag of new zealand">
+                </div>
+                <div class="card-item" data-framework="new zealand">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/new-zealand.png" width="64" height="64" alt="flag of new new-zealand">
+                </div>
+                <div class="card-item" data-framework="russia">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/russia.png" width="64" height="64" alt="flag of russia">
+                </div>
+                <div class="card-item" data-framework="russia">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/russia.png" width="64" height="64" alt="flag of new russia">
+                </div>
+                <div class="card-item" data-framework="wales">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/wales.png" width="64" height="64" alt="flag of wales">
+                </div>
+                <div class="card-item" data-framework="wales">
+                    <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64" alt="back facing card">
+                    <img class="front-face" src="assets/images/flags/wales.png" width="64" height="64" alt="flag of wales">
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
