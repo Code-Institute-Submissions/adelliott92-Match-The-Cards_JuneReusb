@@ -15,6 +15,9 @@ $(document).ready(function() {
     let cardFlipped = false;
     let cardBoardLocked = false;
     let cardOne, cardTwo;
+    let startingScore = document.getElementById('score').innerHTML;
+    let playerScore = parseInt(startingScore);
+    let allMatches = document.querySelectorAll('.flip').length;
 
     function cardFlip() {
       if (cardBoardLocked) return;
@@ -47,18 +50,25 @@ $(document).ready(function() {
     function cardsDisabled() {
       cardOne.removeEventListener('click', cardFlip);
       cardTwo.removeEventListener('click', cardFlip);
-
+      playerScore += 5;
+      document.getElementById('score').innerHTML = String(playerScore);
       gameReset();
     }
 
     // If the player is wrong and doesn't get match lockCard() function flips the cards back to the back card face but doesn't flip card for few seconds.
     function lockCard() {
       cardBoardLocked = true;
-
+      
       setTimeout(() => {
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip');
-
+        if(playerScore <= 0){
+          playerScore = 0
+          document.getElementById('score').innerHTML = String(playerScore);
+        } else{
+          playerScore -= 2
+          document.getElementById('score').innerHTML = String(playerScore);
+        }
         gameReset();
       }, 1500);
     }
@@ -76,6 +86,11 @@ $(document).ready(function() {
         card.style.order = mixCards;
       });
     })();
+
+    // 
+    for (counter = 0; counter < allMatches; counter++) {
+      console.log("ALL MATCHES FOUND! YOU WIN");
+    }
 
     deckOfCards.forEach(card => card.addEventListener('click', cardFlip));
 

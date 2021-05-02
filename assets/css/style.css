@@ -155,6 +155,12 @@ nav{
     transform: rotateY(180deg);
 }
 
+.results{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Media queries */
 
 /* Media queries for large devices */
