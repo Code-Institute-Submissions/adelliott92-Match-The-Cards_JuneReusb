@@ -148,6 +148,7 @@ nav {
 }
 
 .results {
+    margin-top: 5px;
     width: 540px;
     display: flex;
     justify-content: space-between;
@@ -155,8 +156,22 @@ nav {
     margin-right: auto;
 }
 
-.reset:hover {
+button{
+    background-color: #500a73;
+    color: #fff;
+    border: 0;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.reset{
+    color: #fff;
     background-color: red;
+    border: 0;
+    height: 20px;
+    width: 100px;
 }
 
 /* Media queries */

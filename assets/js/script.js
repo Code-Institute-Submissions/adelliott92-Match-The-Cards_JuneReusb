@@ -8,6 +8,7 @@ $(document).ready(function () {
     $('.dark-mode-button').toggleClass('grey-background');
     $('.back-face').toggleClass('grey-backface');
     $('.front-face').toggleClass('grey-frontface')
+    $('.how-to').toggleClass('grey-background')
   })
 
   // Main content
