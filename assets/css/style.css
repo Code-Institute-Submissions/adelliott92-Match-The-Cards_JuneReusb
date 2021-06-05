@@ -198,14 +198,12 @@ nav {
     .dark-mode-button {
         width: 30px;
         height: 15px;
-        background: #430775;
         border-radius: 50px;
     }
 
     .toggler {
         width: 15px;
         height: 15px;
-        background: #a842fc;
         border-radius: 50px;
     }
 
