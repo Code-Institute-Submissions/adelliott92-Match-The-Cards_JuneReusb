@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/brain-16x16.png">
     <title>MATCH THE CARDS!</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -30,7 +33,7 @@
 
     <!-- Main section -->
     <main>
-        <section class="card-board">
+        <div class="card-board">
             <div class="card-grid">
                 <div class="card-item" data-framework="ireland">
                     <img class="back-face" src="assets/images/flags/default-card.png" width="64" height="64"
@@ -104,9 +107,14 @@
                 </div>
             </div>
             <div class="results">
-                <p>RESULT: <span id="score">0</span></p>
+                <div>
+                    <p>RESULT: <span id="score">0</span></p>
+                </div>
+                <div>
+                    <p class="reset" onClick="document.location.reload(true)">RESET <i class="fas fa-eraser"></i></p>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
