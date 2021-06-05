@@ -80,7 +80,7 @@ nav {
     background: #919191;
 }
 
-.grey-backface {
+.grey-backface, .grey-frontface {
     width: 100%;
     height: 100%;
     padding: 20px;
