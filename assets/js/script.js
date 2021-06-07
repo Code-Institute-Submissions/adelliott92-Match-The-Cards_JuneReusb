@@ -7,8 +7,8 @@ $(document).ready(function () {
     $('body').toggleClass('dark-background');
     $('.dark-mode-button').toggleClass('grey-background');
     $('.back-face').toggleClass('grey-backface');
-    $('.front-face').toggleClass('grey-frontface')
-    $('.how-to').toggleClass('grey-background')
+    $('.front-face').toggleClass('grey-frontface');
+    $('.how-to, .reset').toggleClass('grey-background');
   })
 
   // Main content
@@ -20,6 +20,7 @@ $(document).ready(function () {
   let startingScore = document.getElementById('score').innerHTML;
   let playerScore = parseInt(startingScore);
   let allMatchesFound = document.querySelectorAll('.flip').length;
+  
 
   function cardFlip() {
     if (cardBoardLocked) return;

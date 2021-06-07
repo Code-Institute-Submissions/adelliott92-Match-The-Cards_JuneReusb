@@ -77,7 +77,7 @@ nav {
 }
 
 .grey-background {
-    background: #919191;
+    background: #919191!important;
 }
 
 .grey-backface, .grey-frontface {
@@ -166,12 +166,32 @@ button{
     font-weight: bold;
 }
 
+.how-to{
+    background-color: #500a73;
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    font-weight: 400;
+}
+
+.how-to:hover{
+    background-color: green!important;
+    transition: 1s;
+}
+
 .reset{
     color: #fff;
-    background-color: red;
     border: 0;
     height: 20px;
     width: 100px;
+}
+
+.reset:hover{
+    background-color: red!important;
+    transition: 1s;
 }
 
 /* Media queries */
