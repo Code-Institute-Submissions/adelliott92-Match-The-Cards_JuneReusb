@@ -182,7 +182,7 @@ button{
     transition: 1s;
 }
 
-.reset{
+.reset, .no-reset{
     color: #fff;
     border: 0;
     height: 20px;
@@ -194,33 +194,122 @@ button{
     transition: 1s;
 }
 
+/* How to play - how-to-play.html */
+
+#how-to-play{
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#how-to-play>h2, #how-to-play>h3{
+    margin: 10px 0px;
+}
+
+#how-to-play>p{
+    margin: 5px 0px;
+}
+
+.play-button{
+    padding: 3px 40px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 /* Media queries */
 
 /* Media queries for large devices */
-@media only screen and (max-width: 1500px) {
-    header {
-        width: 550px;
+@media only screen and (max-width: 1990px) {
+    header, nav, #how-to-play{
+        width: 650px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .card-grid {
+        width: 650px;
+        height: 435px;
+    }
+}
+
+
+@media only screen and (min-width: 960px){
+    .results {
+        margin-top: 5px;
+        width: 640px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .results>div>p{
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    button{
+        background-color: #500a73;
+        color: #fff;
+        border: 0;
+        height: 20px;
+        width: 100px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .how-to{
+        background-color: #500a73;
+        text-decoration: none;
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .how-to:hover{
+        background-color: green!important;
+        transition: 1s;
+    }
+    
+    .reset, .no-reset{
+        color: #fff;
+        border: 0;
+        height: 32px;
+        width: 150px;
+        font-size: 1.4em;
+    }
+    
+    .reset:hover{
+        background-color: red!important;
+        transition: 1s;
     }
 }
 
 @media screen and (max-width: 960px) {
 
     header,
-    nav {
-        height: 70px;
-        width: 550px;
+    nav,
+    #how-to-play {
+        height:70px;
+        width: 650px;
         margin-left: auto;
         margin-right: auto;
     }
+
+
 }
 
 /* Media queries for mobile devices */
 @media screen and (max-width: 650px) {
 
     header,
-    nav {
+    nav,
+    #how-to-play {
         height: 50px;
         width: 98%;
         margin-left: auto;
@@ -301,12 +390,13 @@ button{
 }
 
 /* Media Query for devices in landscape orientation */
-@media only screen and (orientation: landscape) and (max-width: 750px) {
+@media only screen and (orientation: landscape) and (max-width: 900px) {
 
     header,
-    nav {
+    nav,
+    #how-to-play {
         height: 50px;
-        width: 80%;
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
     }
