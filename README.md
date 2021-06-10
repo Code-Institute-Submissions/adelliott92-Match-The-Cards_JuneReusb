@@ -1,5 +1,5 @@
 # MATCH THE CARDS!
-![Match the cards readme banner](assets/images/readme/mtc-banner.png)
+![Match the cards readme banner](https://adelliott92.github.io/Match-The-Cards/assets/images/readme/mtc-banner.png)
 
 ## About
 Match the cards is memory game to test your memory. Anyone can play this game on their smartphone, tablet or laptop. The aim of the game for the player is to find all matches and get a high score. The hardest challenge will be to find all matches in one go.
@@ -154,7 +154,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 #### Code
 
-- ![sweetalert2](https://sweetalert2.github.io/) - Sweetalerts2 was used to create a popup at the end of the game showing the users score and give them option to play the game again.
+- [sweetalert2](https://sweetalert2.github.io/) - Sweetalerts2 was used to create a popup at the end of the game showing the users score and give them option to play the game again.
 
 #### Media
 
